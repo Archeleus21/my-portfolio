@@ -22,5 +22,11 @@ body
   font-family: 'Roboto Slab', serif;
   margin: 0px; /*removed white margins around page*/
 }
-/*Header and Footer
+/*Header
+-------------------------------------------------------*/
+nav
+{
+  display: inline-block;
+}
+/*Footer
 -------------------------------------------------------*/
