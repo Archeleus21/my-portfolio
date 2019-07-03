@@ -11,6 +11,7 @@ html
   }*/
   box-sizing: border-box;
   background-color: slategray;
+  font-size: 1.2em;
 }
 *, *:before, *:after
 {
@@ -25,15 +26,41 @@ body
 }
 /*Header
 -------------------------------------------------------*/
+header
+{
+  margin: 0;
+  position: relative;
+}
+.intro
+{
+  font-size: 1.1em;
+  color: #FFFFFF; /*white*/
+  text-align: center;
+  width: 100%;
+  padding: 100px 0px 200px;
+  background: linear-gradient(rgba(50, 50, 50, .3), rgba(0, 0, 0, 0.1)),
+  url(/images/lake.jpg) no-repeat fixed;
+  background-position: center;
+  background-size: cover;
+}
+.my-name
+{
+  color: darkred;
+}
 nav
 {
   /* aligning the inner content of a block element. */
   text-align: center;
-  /*fixed; is positioned relative to the viewport,*/
-  position: fixed;
+  /*absolute; is positioned relative to the viewport,*/
+  position: absolute;
+  bottom: 0;
   /* stretch accross the entire width of the viewport */
   width: 100%;
-  /*background: black;*/
+}
+.nav-buttons
+{
+  /*removed bottom margins on unordered list*/
+  margin-bottom: 0;
 }
 nav a
 {
@@ -46,7 +73,8 @@ nav a
   /* color */
   color: #FFFFFF;  /*white*/
   /* testing */
-  background: black;
+  background: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .3));
+  /*removed underline and other decorations*/
   text-decoration: none;
 }
 /*Footer
