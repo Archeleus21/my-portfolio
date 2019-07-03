@@ -20,13 +20,29 @@ html
 body
 {
   font-family: 'Roboto Slab', serif;
-  margin: 0px; /*removed white margins around page*/
+  /*removed white margins around page*/
+  margin: 0px;
 }
 /*Header
 -------------------------------------------------------*/
 nav
 {
+  /* aligning the inner content of a block element. */
+  text-align: center;
+  /*fixed; is positioned relative to the viewport,*/
+  position: fixed;
+  /* stretch accross the entire width of the viewport */
+  width: 100%;
+  background: black;
+}
+nav a
+{
+  /* allows to set a width and height on the element */
   display: inline-block;
+  /* enlarging clickable area around links */
+  padding: 10px 25px;
+  /* font size relative to the display default size */
+  font-size: 2em;
 }
 /*Footer
 -------------------------------------------------------*/
