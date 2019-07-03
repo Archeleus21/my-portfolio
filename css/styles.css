@@ -1,0 +1,26 @@
+/*Global styles
+-----------------------------------------------------*/
+html
+{
+  /*set 'box-sizing: border-box' on an element
+  padding and border are included in the width and height.
+  must include
+  *, *:before, *:after
+  {
+    box-sizing: inherit;
+  }*/
+  box-sizing: border-box;
+  background-color: slategray;
+}
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+/*set body font style*/
+body
+{
+  font-family: 'Roboto Slab', serif;
+  margin: 0px; /*removed white margins around page*/
+}
+/*Header and Footer
+-------------------------------------------------------*/
