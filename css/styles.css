@@ -33,7 +33,7 @@ nav
   position: fixed;
   /* stretch accross the entire width of the viewport */
   width: 100%;
-  background: black;
+  /*background: black;*/
 }
 nav a
 {
@@ -42,7 +42,12 @@ nav a
   /* enlarging clickable area around links */
   padding: 10px 25px;
   /* font size relative to the display default size */
-  font-size: 2em;
+  font-size: 1.5em;
+  /* color */
+  color: #FFFFFF;  /*white*/
+  /* testing */
+  background: black;
+  text-decoration: none;
 }
 /*Footer
 -------------------------------------------------------*/
