@@ -20,7 +20,7 @@ html
   box-sizing: border-box;
   font-size: 1.2em;
   /*puts a gradient transition on background and adds and image*/
-  background: linear-gradient(rgba(208, 204, 208, .7), rgba(208, 204, 208, 0.1)),
+  background: linear-gradient(rgba(208, 204, 208, .7), rgba(208, 204, 208, 0.3), rgba(208, 204, 208, 0.7)),
   url(/images/lake.jpg) no-repeat fixed;
   /*positions img center*/
   background-position: center;
@@ -45,10 +45,18 @@ h1
   font-size: 2em;
   color: #1C6E8C; /*Metallic SeaWeed*/
 }
+h2
+{
+  font-family: 'Courgette', cursive;
+  font-size: 1.5em;
+  color: #1C6E8C; /*Metallic SeaWeed*/
+}
 .content-wrap
 {
+  /*allows blocks to position relative to container*/
+  position: relative;
   /*max size of container*/
-  max-width: 750px;
+  max-width: 70%;
   /*keeps contet centered*/
   margin: 0 auto;
   /*padding around content*/
@@ -66,6 +74,8 @@ header
   position: relative;
   color: #274156; /*Japanese Indigo*/
 }
+/*Intro
+------------------------------------------------------*/
 .intro
 {
   /*max size of container*/
@@ -82,7 +92,6 @@ header
   /* width: 100%; */
   /*adds padding around content top, sides, bottom*/
   padding: 100px 0px 200px;
-
 }
 .my-name
 {
@@ -132,6 +141,25 @@ nav a
   width: 95%;
   padding-left: 40px;
 } */
+/*Lang
+------------------------------------------------------*/
+.icons
+{
+  display: inline-block;
+  padding: 3px;
+}
+i
+{
+  display: inline-block;
+  font-size: 5em;
+  margin: 3px;
+  padding: 5px;
+  /* background-color: pink; */
+}
 
 /*Footer
 -------------------------------------------------------*/
+footer
+{
+    text-align: center;
+}
