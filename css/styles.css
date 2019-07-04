@@ -18,8 +18,14 @@ html
     box-sizing: inherit;
   }*/
   box-sizing: border-box;
-  background-color: #FBFCFF;  /*white*/
   font-size: 1.2em;
+  /*puts a gradient transition on background and adds and image*/
+  background: linear-gradient(rgba(208, 204, 208, .7), rgba(208, 204, 208, 0.1)),
+  url(/images/lake.jpg) no-repeat fixed;
+  /*positions img center*/
+  background-position: center;
+  /*img covers entire container*/
+  background-size: cover;
 }
 *, *:before, *:after
 {
@@ -31,13 +37,24 @@ body
   font-family: 'Zilla Slab', serif;
   /*removed white margins around page*/
   margin: 0px;
-  color: #605856; /*Wenge*/
+  color: #274156; /*Japanese Indigo*/
 }
 h1
 {
   font-family: 'Courgette', cursive;
   font-size: 2em;
   color: #1C6E8C; /*Metallic SeaWeed*/
+}
+.content-wrap
+{
+  /*max size of container*/
+  max-width: 750px;
+  /*keeps contet centered*/
+  margin: 0 auto;
+  /*padding around content*/
+  padding: 20px;
+  background-color: rgba(208, 204, 208, .5); /*White*/
+  border: 2px solid rgba(39, 65, 86, 1);
 }
 /*Header
 -------------------------------------------------------*/
@@ -47,27 +64,25 @@ header
   margin: 0;
   /*makes all containers relative to itself*/
   position: relative;
-  padding-bottom: 5px;
-  background-color: #1C6E8C; /*Matellic SeaWeed*/
   color: #274156; /*Japanese Indigo*/
 }
 .intro
 {
+  /*max size of container*/
+  max-width: 750px;
+  /*keeps contet centered*/
+  margin: 0 auto;
+  /*padding around content*/
+  padding: 20px;
   /*sets font to 1.1x the default value*/
   font-size: 1.1em;
   /*aligns text center of container*/
   text-align: center;
   /*set container across entire width of viewport*/
-  width: 100%;
+  /* width: 100%; */
   /*adds padding around content top, sides, bottom*/
   padding: 100px 0px 200px;
-  /*puts a gradient transition on background and adds and image*/
-  background: linear-gradient(rgba(208, 204, 208, .7), rgba(208, 204, 208, 0.1)),
-  url(/images/lake.jpg) no-repeat fixed;
-  /*positions img center*/
-  background-position: center;
-  /*img covers entire container*/
-  background-size: cover;
+
 }
 .my-name
 {
@@ -76,42 +91,47 @@ header
 }
 nav
 {
+  /*max size of container*/
+  min-width: 750px;
   /* aligning the inner content of a block element. */
-  text-align: center;
+  /* text-align: left; */
   /*absolute; is positioned relative to the viewport,*/
   position: absolute;
   /*bottom offselt is at 0*/
-  bottom: 5px;
+  bottom: 0px;
   /* stretch accross the entire width of the viewport */
-  width: 100%;
+  /* width: 100%; */
+  /* background: white; */
 }
 .nav-buttons
 {
   /*removed bottom margins on unordered list*/
-  margin-bottom: 0;
+  margin-bottom: 1px;
 }
 nav a
 {
   /* allows to set a width and height on the element */
   display: inline-block;
   /* enlarging clickable area around links */
-  padding: 10px 25px;
+  padding: 5px;
   /* font size relative to the display default size */
-  font-size: 1.5em;
+  font-size: 1.25em;
   /* color */
   color: #FBFCFF;  /*white*/
   /* testing */
   background: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .3));
   /*removed underline and other decorations*/
   text-decoration: none;
+  /*border*/
+  border: 2px solid rgba(39, 65, 86, 1);
 }
 /* About
 ------------------------------------------------------*/
-.col-wide
+/* .col-wide
 {
   width: 95%;
   padding-left: 40px;
-}
+} */
 
 /*Footer
 -------------------------------------------------------*/
