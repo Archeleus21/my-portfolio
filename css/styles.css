@@ -10,7 +10,7 @@ html
     box-sizing: inherit;
   }*/
   box-sizing: border-box;
-  background-color: slategray;
+  background-color: #FFFFFF;  /*white*/
   font-size: 1.2em;
 }
 *, *:before, *:after
@@ -28,19 +28,30 @@ body
 -------------------------------------------------------*/
 header
 {
+  /*removes margin*/
   margin: 0;
+  /*makes all containers relative to itself*/
   position: relative;
+  padding-bottom: 5px;
+  background-color: #000000; /*black*/
 }
 .intro
 {
+  /*sets font to 1.1x the default value*/
   font-size: 1.1em;
   color: #FFFFFF; /*white*/
+  /*aligns text center of container*/
   text-align: center;
+  /*set container across entire width of viewport*/
   width: 100%;
+  /*adds padding around content top, sides, bottom*/
   padding: 100px 0px 200px;
+  /*puts a gradient transition on background and adds and image*/
   background: linear-gradient(rgba(50, 50, 50, .3), rgba(0, 0, 0, 0.1)),
   url(/images/lake.jpg) no-repeat fixed;
+  /*positions img center*/
   background-position: center;
+  /*img covers entire container*/
   background-size: cover;
 }
 .my-name
@@ -53,7 +64,8 @@ nav
   text-align: center;
   /*absolute; is positioned relative to the viewport,*/
   position: absolute;
-  bottom: 0;
+  /*bottom offselt is at 0*/
+  bottom: 5px;
   /* stretch accross the entire width of the viewport */
   width: 100%;
 }
