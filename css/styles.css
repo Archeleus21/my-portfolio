@@ -49,7 +49,21 @@ h2
 {
   font-family: 'Courgette', cursive;
   font-size: 1.5em;
-  color: #1C6E8C; /*Metallic SeaWeed*/
+}
+h3
+{
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.3em;
+}
+h4
+{
+  font-family: 'Zilla Slab', serif;
+  font-size: 1em;
+}
+h5
+{
+  font-family: 'Zilla Slab', serif;
+  font-size: .75em;
 }
 .content-wrap
 {
@@ -137,6 +151,8 @@ nav a
   /*border*/
   border: 2px solid rgba(39, 65, 86, 1);
 }
+/*Body
+---------------------------------------------------------*/
 /* About
 ------------------------------------------------------*/
 /* .col-wide
@@ -153,11 +169,71 @@ nav a
 }
 i
 {
+  /*keeps icons in line*/
   display: inline-block;
   font-size: 5em;
+  /*puts space around icons*/
   margin: 3px;
+  /*adds additional padding*/
   padding: 5px;
   /* background-color: pink; */
+}
+/*Projects
+------------------------------------------------------------*/
+#projects
+h3
+{
+  text-align: center;
+  text-decoration: underline;
+}
+.vids
+{
+  /*able to center vids in container*/
+  display: block;
+  /*centers vid*/
+  margin: 0 auto 5px;
+  /* always takes up 90% of container*/
+  width: 90%;
+  /*puts border around vid*/
+  border: 2px solid;
+}
+#projects
+.main-img
+{
+  /*able to center image*/
+  display: block;
+  /*centers image*/
+  margin: 0 auto 5px;
+  /*Always takes up 75% of container*/
+  width: 75%;
+  /*puts border around image*/
+  border: 2px solid;
+}
+.sub-img-container
+{
+  /*max height of container*/
+  max-height: 120px;
+  /*alsways fills 100% of container*/
+  width: 100%;
+  /*puts border around container*/
+  border: 2px solid;
+  /*allows for left and right scrolling*/
+  overflow: scroll;
+  /*prevents verticle scrolling*/
+  overflow-y: hidden;
+  /*ensures items stay on one line*/
+  white-space: nowrap;
+}
+.sub-img
+{
+  /*container only around content not entire page*/
+  display: inline-block;
+  /*puts space around image*/
+  margin: 3px 3px;
+  /*sets hight of image*/
+  height: 95px;
+  /*puts boarder aroud image*/
+  border: 2px solid;
 }
 
 /*Footer
