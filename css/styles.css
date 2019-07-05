@@ -78,8 +78,9 @@ header
 ------------------------------------------------------*/
 .intro
 {
+  /* position: relative; */
   /*max size of container*/
-  max-width: 750px;
+  max-width: 70%;
   /*keeps contet centered*/
   margin: 0 auto;
   /*padding around content*/
@@ -101,7 +102,7 @@ header
 nav
 {
   /*max size of container*/
-  min-width: 750px;
+  max-width: 70%;
   /* aligning the inner content of a block element. */
   /* text-align: left; */
   /*absolute; is positioned relative to the viewport,*/
@@ -111,18 +112,20 @@ nav
   /* stretch accross the entire width of the viewport */
   /* width: 100%; */
   /* background: white; */
+
 }
 .nav-buttons
 {
   /*removed bottom margins on unordered list*/
   margin-bottom: 1px;
+  padding: 0;
 }
 nav a
 {
   /* allows to set a width and height on the element */
   display: inline-block;
   /* enlarging clickable area around links */
-  padding: 5px;
+  padding: .2em;
   /* font size relative to the display default size */
   font-size: 1.25em;
   /* color */
@@ -141,7 +144,7 @@ nav a
   width: 95%;
   padding-left: 40px;
 } */
-/*Lang
+/*knowledge
 ------------------------------------------------------*/
 .icons
 {
