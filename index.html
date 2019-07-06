@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+    <script src="JS/script.js" defer></script>
   </head>
   <body>
 <!--Header
@@ -59,8 +59,8 @@
           successes.</p>
           <p>I am very enthusiastice about creating content and visibly apealing
           websites.  When I get stuck on a problem I seek out the information from
-          anwywhere possible. I am a team player and more then willing to help
-          those  around me. Constructive critisism is received like a professional,
+          anywhere possible. I am a team player and more then willing to help
+          those  around me. Constructive criticism is received like a professional,
           knowing that it is being given to make the project or team better.</p>
           <p><a href="#projects">Below</a> are some of the projects I have worked on.</p>
       </section>
@@ -89,30 +89,32 @@
     <div class="content-wrap vids">
       <section id="projects" alt="projects">
         <h1>Projects</h1>
-        <h2>Alien Attack</h2>
-        <h3>Video</h3>
-        <video controls class="vids">
-          <source src="projects/alien-attack/videos/alien-attack.mp4" type="video/mp4">
-        </video>
-        <h3>Images</h3>
-        <img class="main-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
-        <div class="sub-img-container">
-          <img class="sub-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/abduction-particle.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/abduction.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/baked-lighting-on-house.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/explosion-particle.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/game-intro-sequence.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/game-start.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/gameover-screen.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/reloading-turret.png" alt="title screen">
-          <img class="sub-img" src="projects/alien-attack/images/ufo.png" alt="title screen">
-        </div>
-        <h3>Contributions</h3>
-        <p>The Objective of this game is for the player to prevent all of their
-          cows from being abducted for as long as possible.  The player receives
-          points for each UFO destroyed, their score is then saved and stored
-          after all the cows are abducted.</p>
+        <section class="alien-attack">
+          <h2>Alien Attack</h2>
+          <h3>Video</h3>
+          <video controls class="vids">
+            <source src="projects/alien-attack/videos/alien-attack.mp4" type="video/mp4">
+          </video>
+          <h3>Images</h3>
+          <img id="main-img" class="main-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
+          <div id="thumbnail" class="sub-img-container">
+            <img class="sub-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
+            <img class="sub-img" src="projects/alien-attack/images/abduction-particle.png" alt="abduction particle">
+            <img class="sub-img" src="projects/alien-attack/images/abduction.png" alt="abduction">
+            <img class="sub-img" src="projects/alien-attack/images/baked-lighting-on-house.png" alt="baked lighting on house">
+            <img class="sub-img" src="projects/alien-attack/images/explosion-particle.png" alt="explosion particle">
+            <img class="sub-img" src="projects/alien-attack/images/game-intro-sequence.png" alt="game intro sequence">
+            <img class="sub-img" src="projects/alien-attack/images/game-start.png" alt="game start">
+            <img class="sub-img" src="projects/alien-attack/images/gameover-screen.png" alt="gameover screen">
+            <img class="sub-img" src="projects/alien-attack/images/reloading-turret.png" alt="reloading turret">
+            <img class="sub-img" src="projects/alien-attack/images/ufo.png" alt="ufo">
+          </div>
+          <h3>Description</h3>
+          <p>The Objective of this game is for the player to prevent all of their
+            cows from being abducted for as long as possible.  The player receives
+            points for each UFO destroyed, their score is then saved and stored
+            after all the cows are abducted.</p>
+          <h3>Contributions</h3>
           <ul>
             <li>Game Design</li>
             <li>Particle Effects</li>
@@ -123,7 +125,42 @@
             <li>UI Design and Animations  </li>
             <li>Player Animations imported from Mixamo</li>
             <li>State Machine</li>
-​          </ul>
+          </ul>
+        </section>
+        <section class="alien-escape">
+          <h2>Alien Escape</h2>
+          <h3>Video</h3>
+          <video controls class="vids">
+            <source src="projects/alien-escape/videos/alien-escape.mp4" type="video/mp4">
+          </video>
+          <h3>Images</h3>
+          <img id="main-img" class="main-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
+          <div id="thumbnail" class="sub-img-container">
+            <img class="sub-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
+            <img class="sub-img" src="projects/alien-escape/images/practice-level.png" alt="practice level">
+            <img class="sub-img" src="projects/alien-escape/images/level-complete.png" alt="level complete">
+            <img class="sub-img" src="projects/alien-escape/images/death-explosion.png" alt="death explosion">
+            <img class="sub-img" src="projects/alien-escape/images/fuel-power-up.png" alt="fuel power up">
+            <img class="sub-img" src="projects/alien-escape/images/replenished-fuel.png" alt="replenished fuel">
+            <img class="sub-img" src="projects/alien-escape/images/shield.png" alt="shield">
+            <img class="sub-img" src="projects/alien-escape/images/last-level.png" alt="last level">
+            <img class="sub-img" src="projects/alien-escape/images/level-capture.png" alt="level capture">
+          </div>
+          <h3>Description</h3>
+          <p>The Objective of this game is for the player to get from point A to point B
+            using a thrust/propulsion movement system.  Additionally the player must be
+            conscious of their full and moving obstacles.</p>
+          <h3>Contributions</h3>
+          <ul>
+            <li>UI Design</li>
+            <li>C# Coding</li>
+            <li>Ship Design</li>
+            <li>Shaders</li>
+            <li>Level Designs</li>
+            <li>Power Ups</li>
+            <li>Power Up Particles</li>
+          </ul>
+        </section>
       </section>
     </div>
 <!--footer
