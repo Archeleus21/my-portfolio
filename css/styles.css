@@ -93,7 +93,11 @@ header
   position: relative;
   /* color: #274156; /*Japanese Indigo*/
 }
-
+.intro
+h1
+{
+  color: rgba(241, 80, 37, .7);
+}
 .my-name
 {
   font-family: 'Courgette', cursive;
