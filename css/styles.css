@@ -27,9 +27,11 @@ img, video
   max-width: 100%;
 }
 /* border around all content */
-.header, nav, #about, #knowledge, #projects, #resume, .footer
+.header, nav, #about, #knowledge, #projects, #resume, .footer,
+.aa-title, .aa-desc, .aa-desc+p, .aa-vid-sect, .aa-vid,
+.aa-img, #aa-main-img, #aa-thumbnail, .aa-contr, .aa-contr+ul
 {
-	border: 1px solid black;
+	border: 1px solid red;
 	padding: 10px;
 }
 /* container for page  layout */
@@ -43,6 +45,20 @@ img, video
   grid-gap: 10px;
   margin: 0 auto;
 }
+.nested-container
+{
+  /* creates a grid layout */
+  display: grid;
+  /* creates a 12 column grid layout */
+  grid-template-columns: repeat(12, 1fr);
+  /* gap between elements in container*/
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+/* #projects .container .desc p
+{
+  grid-column: 1 / span 6;
+} */
 nav ul
 {
   /* removed bullets from list */
@@ -52,10 +68,28 @@ nav ul
   /* removes padding */
   padding: 0;
 }
+#aa-thumbnail
+{
+  max-height: 200px;
+  overflow: auto;
+  white-space: nowrap;
+}
+.sub-img
+{
+  height: 155px;
+  width: 225px;
+}
 /* targets all elements that are a direct child of .container */
 .container > *
 {
   grid-column: 1 / span 12;
+}
+.nested-container > *
+{
+  /* starts at line 1 and covers entire 12 columns */
+  grid-column: 1 / span 12;
+  /* removes margin */
+  margin:0;
 }
 /* mediume sized screens */
 @media (min-width: 600px)
@@ -106,6 +140,41 @@ nav ul
   #projects
   {
     grid-column: 1 / span 12;
+  }
+/* nested container
+===================================================== */
+  .aa-desc, .aa-desc+p
+  {
+    grid-column: 1 / span 6;
+  }
+  .aa-vid-sect
+  {
+    grid-column: 7 / span 6;
+    grid-row: 2;
+  }
+  .aa-vid
+  {
+    grid-column: 7 / span 6;
+    grid-row: 3;
+  }
+  #aa-main-img
+  {
+    grid-column: 1 / span 6;
+  }
+  #aa-thumbnail
+  {
+    grid-column: 7 / span 6;
+    grid-row: 5;
+    margin: auto 0;
+  }
+  .aa-contr
+  {
+    grid-column: 1 / span 6;
+  }
+  .nested-container ul
+  {
+    grid-column: 8 / span 6;
+    grid-row: 6;
   }
 }
 .container
