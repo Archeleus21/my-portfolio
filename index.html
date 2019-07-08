@@ -9,6 +9,8 @@
     <title>Anthony E. Roybal | Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Courgette|Zilla+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+<!-- Icon Links
+===============================================================-->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -17,35 +19,35 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<!--Resume website
+================================================================-->
     <link rel="resume" href="resume.html">
+<!--JavaScript
+=================================================================-->
     <script src="JS/script.js" defer></script>
   </head>
   <body>
 <!--Header
 ========================================================-->
-    <Header>
-      <div class="intro col-wide col-narrow">
+    <div class="container">
+      <Header class="header">
         <h1>If you are not willing to learn, no one can help you.
-          <br>If you are determined to learn, no one can stop you.</h1>
-
+        <br>If you are determined to learn, no one can stop you.</h1>
         <p>My name is <span class="my-name"><b>Anthony Roybal</b></span> and I am an aspiring
         Web Developer/Software Developer. <br>Here are some the projects I have worked on.</p>
-
-        <nav class="navigation" role="navigation">
-          <ul class="nav-buttons">
-            <a href="#about">About</a>
-            <a href="#knowledge">Knowledge</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-          </ul>
-        </nav>
-      </div>
-    </Header>
+      </Header>
+      <nav class="navigation" role="navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#knowledge">Knowledge</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 <!--About
 ========================================================-->
-    <div class="content-wrap col-wide col-narrow">
-      <section id="about" alt="about">
+      <article id="about" alt="about">
         <h1><b>About</b></h1>
         <p>I started my programming journey a few years ago.  Diving into the
           free to use engines such as Unity and Unreal both of which have rekindled
@@ -65,13 +67,10 @@
           those  around me. Constructive criticism is received like a professional,
           knowing that it is being given to make the project or team better.</p>
           <p><a href="#projects">Below</a> are some of the projects I have worked on.</p>
-      </section>
-    </div>
-
+      </article>
 <!--knowledge
 ========================================================-->
-    <div class="content-wrap col-wide col-narrow">
-      <section id="knowledge" alt="knowledge">
+      <div id="knowledge" alt="knowledge">
         <h1><b>Knowledge</b></h1>
         <div class="col-height icons">
           <i class="devicon-cplusplus-line"></i>
@@ -83,61 +82,54 @@
           <i class="devicon-github-plain-wordmark"></i>
           <i class="devicon-sourcetree-plain-wordmark"></i>
         </div>
-      </section>
-    </div>
-
+      </div>
 <!--projects
 ========================================================-->
-    <div class="content-wrap col-wide col-narrow">
       <section id="projects" alt="projects">
         <h1>Projects</h1>
-        <div class="project-wrap">
-          <div id="alien-attack">
-            <h2>Alien Attack</h2>
-            <h3>Description</h3>
-            <p>The Objective of this game is for the player to prevent all of their
-              cows from being abducted for as long as possible.  The player receives
-              points for each UFO destroyed, their score is then saved and stored
-              after all the cows are abducted.</p>
-            <h3>Video</h3>
-            <video controls class="vids">
-              <source src="projects/alien-attack/videos/alien-attack.mp4" type="video/mp4">
-            </video>
-            <h3>Images</h3>
-            <img id="aa-main-img" class="main-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
-            <div id="aa-thumbnail" class="sub-img-container" onclick="changeImage()">
-              <img class="sub-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
-              <img class="sub-img" src="projects/alien-attack/images/abduction-particle.png" alt="abduction particle">
-              <img class="sub-img" src="projects/alien-attack/images/abduction.png" alt="abduction">
-              <img class="sub-img" src="projects/alien-attack/images/baked-lighting-on-house.png" alt="baked lighting on house">
-              <img class="sub-img" src="projects/alien-attack/images/explosion-particle.png" alt="explosion particle">
-              <img class="sub-img" src="projects/alien-attack/images/game-intro-sequence.png" alt="game intro sequence">
-              <img class="sub-img" src="projects/alien-attack/images/game-start.png" alt="game start">
-              <img class="sub-img" src="projects/alien-attack/images/gameover-screen.png" alt="gameover screen">
-              <img class="sub-img" src="projects/alien-attack/images/reloading-turret.png" alt="reloading turret">
-              <img class="sub-img" src="projects/alien-attack/images/ufo.png" alt="ufo">
-            </div>
-            <h3>Contributions</h3>
-            <ul>
-              <li>Game Design</li>
-              <li>Particle Effects</li>
-              <li>C# Coding</li>
-              <li>Level Design</li>
-              <li>UFO Model and Texturing</li>
-              <li>Rocket Turret</li>
-              <li>UI Design and Animations  </li>
-              <li>Player Animations imported from Mixamo</li>
-              <li>State Machine</li>
-            </ul>
+        <div id="alien-attack">
+          <h2>Alien Attack</h2>
+          <h3>Description</h3>
+          <p>The Objective of this game is for the player to prevent all of their
+          cows from being abducted for as long as possible.  The player receives
+          points for each UFO destroyed, their score is then saved and stored
+          after all the cows are abducted.</p>
+          <h3>Video</h3>
+          <video controls class="vids">
+            <source src="projects/alien-attack/videos/alien-attack.mp4" type="video/mp4">
+          </video>
+          <h3>Images</h3>
+          <img id="aa-main-img" class="main-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
+          <div id="aa-thumbnail" class="sub-img-container" onclick="changeImage()">
+            <img class="sub-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
+            <img class="sub-img" src="projects/alien-attack/images/abduction-particle.png" alt="abduction particle">
+            <img class="sub-img" src="projects/alien-attack/images/abduction.png" alt="abduction">
+            <img class="sub-img" src="projects/alien-attack/images/baked-lighting-on-house.png" alt="baked lighting on house">
+            <img class="sub-img" src="projects/alien-attack/images/explosion-particle.png" alt="explosion particle">
+            <img class="sub-img" src="projects/alien-attack/images/game-intro-sequence.png" alt="game intro sequence">
+            <img class="sub-img" src="projects/alien-attack/images/game-start.png" alt="game start">
+            <img class="sub-img" src="projects/alien-attack/images/gameover-screen.png" alt="gameover screen">
+            <img class="sub-img" src="projects/alien-attack/images/reloading-turret.png" alt="reloading turret">
+            <img class="sub-img" src="projects/alien-attack/images/ufo.png" alt="ufo">
           </div>
-        </div>
-        <div id="alien-escape">
-          <div class="project-wrap">
+          <h3>Contributions</h3>
+          <ul>
+            <li>Game Design</li>
+            <li>Particle Effects</li>
+            <li>C# Coding</li>
+            <li>Level Design</li>
+            <li>UFO Model and Texturing</li>
+            <li>Rocket Turret</li>
+            <li>UI Design and Animations  </li>
+            <li>Player Animations imported from Mixamo</li>
+            <li>State Machine</li>
+          </ul>
+          <div id="alien-escape">
             <h2>Alien Escape</h2>
             <h3>Description</h3>
             <p>The Objective of this game is for the player to get from point A to point B
-              using a thrust/propulsion movement system.  Additionally the player must be
-              conscious of their full and moving obstacles.</p>
+            using a thrust/propulsion movement system.  Additionally the player must be
+            conscious of their full and moving obstacles.</p>
             <h3>Video</h3>
             <video controls class="vids">
               <source src="projects/alien-escape/videos/alien-escape.mp4" type="video/mp4">
@@ -165,31 +157,27 @@
               <li>Power Ups</li>
               <li>Power Up Particles</li>
             </ul>
-          </div>
-        </div>
-        <div class="project-wrap">
-          <div id="particle-explosion">
-            <h2>Particle Explosion</h2>
-            <h3>Description</h3>
-            <p>Made a particle effect using C++ with the help of a tutorial to help become
-            more familiar with the programming language.</p>
-            <h3>Video</h3>
-            <video controls class="vids">
-              <source src="projects/particle-explosion/videos/particle-explosion.mp4" type="video/mp4">
-            </video>
-            <h3>Images</h3>
-            <img id="pe-main-img" class="main-img" src="projects/particle-explosion/images/blue-particle.png" alt="blue particle">
-            <div id="pe-thumbnail" class="sub-img-container" onclick="changeImage()">
-              <img class="sub-img" src="projects/particle-explosion/images/blue-particle.png" alt="blue particle">
-              <img class="sub-img" src="projects/particle-explosion/images/green-particle.png" alt="green particle">
-              <img class="sub-img" src="projects/particle-explosion/images/purple-particle.png" alt="purple particle">
-              <img class="sub-img" src="projects/particle-explosion/images/red-particle.png" alt="red particle">
-              <img class="sub-img" src="projects/particle-explosion/images/white-particle.png" alt="white particle">
-              <img class="sub-img" src="projects/particle-explosion/images/yellow-particle.png" alt="yello particle">
+            <div id="particle-explosion">
+              <h2>Particle Explosion</h2>
+              <h3>Description</h3>
+              <p>Made a particle effect using C++ with the help of a tutorial to help become
+              more familiar with the programming language.</p>
+              <h3>Video</h3>
+              <video controls class="vids">
+                <source src="projects/particle-explosion/videos/particle-explosion.mp4" type="video/mp4">
+              </video>
+              <h3>Images</h3>
+              <img id="pe-main-img" class="main-img" src="projects/particle-explosion/images/blue-particle.png" alt="blue particle">
+              <div id="pe-thumbnail" class="sub-img-container" onclick="changeImage()">
+                <img class="sub-img" src="projects/particle-explosion/images/blue-particle.png" alt="blue particle">
+                <img class="sub-img" src="projects/particle-explosion/images/green-particle.png" alt="green particle">
+                <img class="sub-img" src="projects/particle-explosion/images/purple-particle.png" alt="purple particle">
+                <img class="sub-img" src="projects/particle-explosion/images/red-particle.png" alt="red particle">
+                <img class="sub-img" src="projects/particle-explosion/images/white-particle.png" alt="white particle">
+                <img class="sub-img" src="projects/particle-explosion/images/yellow-particle.png" alt="yello particle">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="project-wrap">
           <div id="unity-shaders">
             <h2>Unity Shaders</h2>
             <h3>Description</h3>
@@ -215,13 +203,11 @@
               <li>texture application</li>
             </ul>
           </div>
-        </div>
-        <div class="project-wrap">
           <div id="zombie-rush">
             <h2>Zombie Rush</h2>
             <h3>Description</h3>
             <p>The objective of the game is to avoid the obstacles while collecting
-              as many coins as possible.</p>
+            as many coins as possible.</p>
             <h3>Video</h3>
             <video controls class="vids">
               <source src="projects/zombie-rush/videos/zombie-rush.mp4" type="video/mp4">
@@ -243,8 +229,6 @@
               <li>High score UI and functionality</li>
             </ul>
           </div>
-        </div>
-        <div class="project-wrap">
           <div id="tower-defense">
             <h2>Medieval Defense</h2>
             <h3>Description</h3>
@@ -274,21 +258,15 @@
           </div>
         </div>
       </section>
-    </div>
 <!--Resume
 ========================================================-->
-    <div class="content-wrap vids col-wide col-narrow">
-      <h1>Resume</h1>
-      <div class="project-wrap">
-        <div id="resume" >
-          <a href="resume.html">View Resume</a>
-        </div>
+      <div id="resume" >
+        <h1>Resume</h1>
+        <a href="resume.html">View Resume</a>
       </div>
-    </div>
 <!--footer
 ========================================================-->
-    <footer>
-      <div class="content-wrap col-wide col-narrow">
+      <footer class="footer">
         <section id="contact" >
           <h1><b>Let's Keep in Touch!</b></h1>
           <a href="mailto:roybal.usmc@gmail.com">Roybal.usmc@gmail.com</a>
@@ -297,7 +275,7 @@
           <a href="https://github.com/Archeleus21">GitHub</a>
           <h5>Copyright 2019 by Anthony Roybal</h5>
         </section>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

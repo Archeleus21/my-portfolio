@@ -1,15 +1,4 @@
 /*Color Scheme
-#D0CCD0; Light Gray
-#FBFCFF; White
-#605856; Wenge
-#1C6E8C; Metallic Seaweed
-#274156; Japanese Indigo
-#F15025; Flame
-#E6E8E6; platinum
-#969896; Spanish Gray
-#191919; earie black
-#0CA4A5; persian green
-
 */
 
 /*Global styles
@@ -26,409 +15,99 @@ html
   }*/
   box-sizing: border-box;
   font-size: 1.25em;
-  /*puts a gradient transition on background and adds and image*/
-  background: linear-gradient(rgba(25, 25, 25, .7), rgba(208, 204, 208, 0.3), rgba(25, 25, 25, 0.7)),
-  url(../images/lake.jpg) no-repeat fixed;
-  /*positions img center*/
-  background-position: center;
-  /*img covers entire container*/
-  background-size: cover;
+
 }
 *, *:before, *:after
 {
   box-sizing: inherit;
 }
-/*set body font style*/
-body
+/* image maximum width */
+img, video
 {
-  font-family: 'Zilla Slab', serif;
-  /*removed white margins around page*/
-  margin: 0px;
-  color: #E6E8E6; /*platinum*/
-  font-size: 1em;
+  max-width: 100%;
 }
-h1
+/* border around all content */
+.header, nav, #about, #knowledge, #projects, #resume, .footer
 {
-  font-family: 'Courgette', cursive;
-  font-size: 1.5em;
-  color: #F15025; /*Flame*/
+	border: 1px solid black;
+	padding: 10px;
 }
-h2
+/* container for page  layout */
+.container
 {
-  font-family: 'Courgette', cursive;
-  font-size: 1.25em;
-  color: #0CA4A5; /*persian green*/
+  /* creates a grid layout */
+  display: grid;
+  /* creates a 12 column grid layout */
+  grid-template-columns: repeat(12, 1fr);
+  /* gap between elements in container*/
+  grid-gap: 10px;
 }
-h3
+nav ul
 {
-  font-family: 'Zilla Slab', serif;
-  font-size: 1.15em;
+  /* removed bullets from list */
+  list-style: none;
+  /* removes margins */
   margin: 0;
-  color: #0CA4A5;
+  /* removes padding */
+  padding: 0;
 }
-h4
+/* targets all elements that are a direct child of .container */
+.container > *
 {
-  font-family: 'Zilla Slab', serif;
-  font-size: 1em;
+  grid-column: 1 / span 12;
 }
-h5
+/* mediume sized screens */
+@media (min-width: 600px)
 {
-  font-family: 'Zilla Slab', serif;
-  font-size: .75em;
-}
-p
-{
-  width: 90%;
-  margin: 0 auto;
-  padding: 0 10%;
-}
-
-/*Header
--------------------------------------------------------*/
-header
-{
-  /*removes margin*/
-  margin: 0;
-  /*makes all containers relative to itself*/
-  position: relative;
-  /* color: #274156; /*Japanese Indigo*/
-}
-
-.my-name
-{
-  font-family: 'Courgette', cursive;
-  color: #191919; /*earie black*/
-}
-
-nav a:hover
-{
-  /* grandient */
-  background: linear-gradient(rgba(12,164,165, .3), rgba(12,164,165, .7), rgba(12,164,165, .3));  /*persian green*/
-  color: #191919; /*earie black*/
-  border: 2px solid black;
-}
-/*Body
----------------------------------------------------------*/
-
-/*knowledge
-------------------------------------------------------*/
-.icons
-{
-  display: inline-block;
-  padding: 3px;
-}
-i
-{
-  /*keeps icons in line*/
-  display: inline-block;
-  font-size: 5em;
-  /*puts space around icons*/
-  margin: 3px;
-  /*adds additional padding*/
-  padding: 5px;
-  /* background-color: pink; */
-}
-/*Projects
-------------------------------------------------------------*/
-.project-wrap
-{
-  /*allows blocks to position relative to container*/
-  position: relative;
-  /*max size of container*/
-  max-width: 95%;
-  /*keeps contet centered*/
-  margin: 10px auto 10px;
-  /*padding around content*/
-  padding: 20px;
-
-  background-color: rgba(25,25,25, .75); /*Earie black*/
-  border: 2px solid;
-}
-#projects
-h3
-{
-  padding: 15px 0;
-  text-align: center;
-  text-decoration: underline;
-}
-.vids
-{
-  /*able to center vids in container*/
-  display: block;
-  /*centers vid*/
-  margin: 0 auto 5px;
-  /* always takes up 90% of container*/
-  width: 70%;
-  /*puts border around vid*/
-  border: 2px solid;
-}
-#projects
-.main-img
-{
-  /*able to center image*/
-  display: block;
-  /*centers image*/
-  margin: 0 auto 5px;
-  /*Always takes up 75% of container*/
-  width: 50%;
-  /*puts border around image*/
-  border: 2px solid;
-}
-.sub-img-container
-{
-  /*max height of container*/
-  max-height: 125px;
-  /*alsways fills 100% of container*/
-  width: 70%;
-  margin: 0 auto;
-  /*puts border around container*/
-  border: 2px solid;
-  /*allows for left and right scrolling*/
-  overflow: auto;
-  /*prevents verticle scrolling*/
-  overflow-y: hidden;
-  /*ensures items stay on one line*/
-  white-space: nowrap;
-  text-align: center;
-}
-.sub-img
-{
-  /*container only around content not entire page*/
-  display: inline-block;
-  /*puts space around image*/
-  margin: 10px 0 10px 10px;
-  /*sets hight of image*/
-  height: 75px;
-  /*puts boarder aroud image*/
-  border: 2px solid;
-}
-.sub-img:hover
-{
-  border: 4px solid red;
-  cursor: pointer;
-}
-/*Resume
-------------------------------------------------------*/
-#resume
-{
-  text-align: center;
-  margin: 0 auto;
-}
-#resume
-a
-{
-  /* color */
-  color: #0CA4A5;  /*persian green*/
-  padding: 10px;
-  border: 2px solid;
-  /* grandient */
-  background: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .3));
-}
-#resume
-a:hover
-{
-  /* color */
-  color: #191919; /*earie black*/
-  background: linear-gradient(rgba(12,164,165, .3), rgba(12,164,165, .7), rgba(12,164,165, .3));  /*persian green*/
-  border: 2px solid black;
-  text-decoration: none;
-}
-
-/*Footer
--------------------------------------------------------*/
-footer
-{
-    text-align: center;
-}
-#contact
-a
-{
-    padding: 10px;
-    color: #0CA4A5; /*persian green*/
-}
-#contact
-a:hover
-{
-    text-decoration: none;
-    background: linear-gradient(rgba(12,164,165, .3), rgba(12,164,165, .7), rgba(12,164,165, .3));  /*persian green*/
-    color: #191919; /*earie black*/
-}
-
-/*Media
----------------------------------------------------------*/
-@media (min-width: 900px) /*anything smaller gets default, larger gets changed*/
-{
-  nav
+  #knowledge
   {
-    /*max size of container*/
-    /* max-width: 70%; */
-    /* aligning the inner content of a block element. */
-    /* text-align: left; */
-    /*absolute; is positioned relative to the viewport,*/
-    position: relative;
-    /*bottom offselt is at 0*/
-    margin: 0px auto;
-    /* stretch accross the entire width of the viewport */
-    /* width: 100%; */
-    /* background: white; */
-
+    /* starts in line 1 and spans 3 lines */
+    grid-column: 1 / span 3;
+    /* start in row 3 */
+    grid-row: 3;
   }
-  .nav-buttons
+  #resume
   {
-    /*removed bottom margins on unordered list*/
-    margin-bottom: 5px;
+    /* starts in line 1 and spans 3 lines */
+    grid-column: 1 / span 3;
+    /* start in row 4 */
+    grid-row: 4;
   }
-  nav a
+  #about, #projects
   {
-    /* allows to set a width and height on the element */
-    display: inline-block;
-    /* enlarging clickable area around links */
-    /* padding: .2em; */
-    /* font size relative to the display default size */
-    /* font-size: 1.25em; */
-    /* color */
-    color: #FBFCFF;  /*white*/
-    /* grandient */
-    background: linear-gradient(rgba(25, 25, 25, .7),rgba(25, 25, 25, .3),rgba(25, 25, 25, .7));
-    /*removed underline and other decorations*/
-    text-decoration: none;
-    /*border*/
-    border: 2px solid; /*japanese indigo*/
+    /* starts in line 4 and spans 9 lines */
+    grid-column: 4 / span 9;
   }
-  .col-narrow
+  nav ul
   {
-    width: 30%;
-    /* border: 1px solid black; */
+    /* puts in one line */
+    display: flex;
+    /* evenly distributes space between links */
+    justify-content: space-between;
   }
-  .col-wide
+}
+/* large screen */
+@media (min-width: 900px)
+{
+  #knowledge
   {
-    width: 70%;
-    padding-left: 20px;
-    /* border: 1px solid black; */
+    grid-column: 1 / span 2;
   }
-  .content-wrap
+  #about, #projects
   {
-    /*allows blocks to position relative to container*/
-    position: relative;
-    /*max size of container*/
-    max-width: 70%;
-    /*keeps contet centered*/
-    margin: 0 auto;
-    /*padding around content*/
-    /* padding: 20px; */
-    background-color: rgba(25, 25, 25, .5); /*Wenge*/
-    border: 1px solid;
+    grid-column: 3 / span 7;
   }
-  #about
+  #resume
   {
-    margin-bottom: 20px;
-  }
-  /*Intro
-  ------------------------------------------------------*/
-  .intro
-  {
-    /* position: relative; */
-    /*max size of container*/
-    max-width: 70%;
-    /*keeps contet centered*/
-    margin: 0 auto;
-    /*padding around content*/
-    padding: 20px;
-    /*sets font to 1.1x the default value*/
-    font-size: 1.2em;
-    /*aligns text center of container*/
-    text-align: center;
-    /*set container across entire width of viewport*/
-    /* width: 100%; */
-    /*adds padding around content top, sides, bottom*/
-    padding: 100px 0px 0px;
+    grid-column: 10 / span 3;
+    grid-row: 3;
   }
   #projects
-  ul
   {
-    margin: 0 auto;
-    padding: 0 40%
+    grid-column: 1 / span 12;
   }
 }
-@media (max-width: 899px)
+.container
 {
-  nav
-  {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-  }
-  nav
-  .nav-buttons
-  {
-      padding: 5px;
-  }
-  nav a
-  {
-    /* allows to set a width and height on the element */
-    display: inline-block;
-    /* enlarging clickable area around links */
-    padding: .2em;
-    /* font size relative to the display default size */
-    font-size: 1em;
-    /* color */
-    color: #FBFCFF;  /*white*/
-    /* grandient */
-    background: linear-gradient(rgba(25, 25, 25, .7),rgba(25, 25, 25, .3),rgba(25, 25, 25, .7));
-    /*removed underline and other decorations*/
-    text-decoration: none;
-    /*border*/
-    border: 2px solid;
-  }
-  .content-wrap
-  {
-    /*allows blocks to position relative to container*/
-    position: relative;
-    /*max size of container*/
-    max-width: 100%;
-    /*keeps contet centered*/
-    margin: 0 auto;
-    /*padding around content*/
-    padding: 20px;
-    background-color: rgba(96, 88, 86, .5); /*Wenge*/
-    border: 2px solid rgba(39, 65, 86, 1);
-
-  }
-  /*Intro
-  ------------------------------------------------------*/
-  .intro
-  {
-    /* position: relative; */
-    /*max size of container*/
-    max-width: 100%;
-    /*keeps contet centered*/
-    margin: 0 auto;
-    /*padding around content*/
-    padding: 20px;
-    /*sets font to 1.1x the default value*/
-    font-size: 1.2em;
-    /*aligns text center of container*/
-    text-align: center;
-    /*set container across entire width of viewport*/
-    /* width: 100%; */
-    /*adds padding around content top, sides, bottom*/
-    padding: 100px 0px 200px;
-  }
-  #projects
-  ul
-  {
-    margin: 0 auto;
-    padding: 0 10%
-  }
-  .col-wide
-  {
-    width: 95%;
-    padding-left: 20px;
-    /* border: 1px solid black; */
-  }
-  .col-narrow
-  {
-    padding: 0;
-    margin: 0 auto;
-  }
+  max-width: 1200px;
 }
