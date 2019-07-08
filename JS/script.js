@@ -5,6 +5,14 @@ var aaMainImage = document.getElementById("aa-main-img");
 var aaThumbnail = document.getElementById("aa-thumbnail");
 var aeMainImage = document.getElementById("ae-main-img");
 var aeThumbnail = document.getElementById("ae-thumbnail");
+var peMainImage = document.getElementById("pe-main-img");
+var peThumbnail = document.getElementById("pe-thumbnail");
+var usMainImage = document.getElementById("us-main-img");
+var usThumbnail = document.getElementById("us-thumbnail");
+var zrMainImage = document.getElementById("zr-main-img");
+var zrThumbnail = document.getElementById("zr-thumbnail");
+var tdMainImage = document.getElementById("td-main-img");
+var tdThumbnail = document.getElementById("td-thumbnail");
 
 //var mainImage = ["alien-attack", "alien-escape"];
 //event handler function
@@ -25,6 +33,18 @@ function changeImage(e)
         break;
       case aeThumbnail.id:
         aeMainImage.src = targetElement.getAttribute("src");
+        break;
+      case peThumbnail.id:
+        peMainImage.src = targetElement.getAttribute("src");
+        break;
+      case usThumbnail.id:
+        usMainImage.src = targetElement.getAttribute("src");
+        break;
+      case zrThumbnail.id:
+        zrMainImage.src = targetElement.getAttribute("src");
+        break;
+      case tdThumbnail.id:
+        tdMainImage.src = targetElement.getAttribute("src");
         break;
       default:
 

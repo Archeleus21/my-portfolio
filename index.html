@@ -17,14 +17,16 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="resume" href="resume.html">
     <script src="JS/script.js" defer></script>
   </head>
   <body>
 <!--Header
 ========================================================-->
     <Header>
-      <div class="intro">
-        <h1>Site Under Construction!</h1>
+      <div class="intro col-wide col-narrow">
+        <h1>If you are not willing to learn, no one can help you.
+          <br>If you are determined to learn, no one can stop you.</h1>
 
         <p>My name is <span class="my-name"><b>Anthony Roybal</b></span> and I am an aspiring
         Web Developer/Software Developer. <br>Here are some the projects I have worked on.</p>
@@ -42,8 +44,8 @@
     </Header>
 <!--About
 ========================================================-->
-    <div class="content-wrap">
-      <section id="about" class="col-wide" alt="about">
+    <div class="content-wrap col-wide col-narrow">
+      <section id="about" alt="about">
         <h1><b>About</b></h1>
         <p>I started my programming journey a few years ago.  Diving into the
           free to use engines such as Unity and Unreal both of which have rekindled
@@ -51,13 +53,13 @@
           into web development learning and using Front-End languages to create
           web pages.  I strive to learn all I can about the process it takes to
           make games and web apps focusing on how I can become better at what I do.</p>
-          <p>This has given me an appreciation for the amount of work and effort it
+          <br><p>This has given me an appreciation for the amount of work and effort it
           takes to come out with even the simplest projects let alone the large
           and complex ones.  My desire to create keeps me hungry for the knowledge
           I need to do my very best. I enjoy challenges since they push me to be
           better and I find that I learn more from my failures than I do from my
           successes.</p>
-          <p>I am very enthusiastice about creating content and visibly apealing
+          <br><p>I am very enthusiastice about creating content and visibly apealing
           websites.  When I get stuck on a problem I seek out the information from
           anywhere possible. I am a team player and more then willing to help
           those  around me. Constructive criticism is received like a professional,
@@ -68,7 +70,7 @@
 
 <!--knowledge
 ========================================================-->
-    <div class="content-wrap">
+    <div class="content-wrap col-wide col-narrow">
       <section id="knowledge" alt="knowledge">
         <h1><b>Knowledge</b></h1>
         <div class="col-height icons">
@@ -86,123 +88,209 @@
 
 <!--projects
 ========================================================-->
-    <div class="content-wrap vids">
+    <div class="content-wrap col-wide col-narrow">
       <section id="projects" alt="projects">
         <h1>Projects</h1>
-        <div id="alien-attack">
-          <h2>Alien Attack</h2>
-          <h3>Video</h3>
-          <video controls class="vids">
-            <source src="projects/alien-attack/videos/alien-attack.mp4" type="video/mp4">
-          </video>
-          <h3>Images</h3>
-          <img id="aa-main-img" class="main-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
-          <div id="aa-thumbnail" class="sub-img-container" onclick="changeImage()">
-            <img class="sub-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
-            <img class="sub-img" src="projects/alien-attack/images/abduction-particle.png" alt="abduction particle">
-            <img class="sub-img" src="projects/alien-attack/images/abduction.png" alt="abduction">
-            <img class="sub-img" src="projects/alien-attack/images/baked-lighting-on-house.png" alt="baked lighting on house">
-            <img class="sub-img" src="projects/alien-attack/images/explosion-particle.png" alt="explosion particle">
-            <img class="sub-img" src="projects/alien-attack/images/game-intro-sequence.png" alt="game intro sequence">
-            <img class="sub-img" src="projects/alien-attack/images/game-start.png" alt="game start">
-            <img class="sub-img" src="projects/alien-attack/images/gameover-screen.png" alt="gameover screen">
-            <img class="sub-img" src="projects/alien-attack/images/reloading-turret.png" alt="reloading turret">
-            <img class="sub-img" src="projects/alien-attack/images/ufo.png" alt="ufo">
+        <div class="project-wrap">
+          <div id="alien-attack">
+            <h2>Alien Attack</h2>
+            <h3>Description</h3>
+            <p>The Objective of this game is for the player to prevent all of their
+              cows from being abducted for as long as possible.  The player receives
+              points for each UFO destroyed, their score is then saved and stored
+              after all the cows are abducted.</p>
+            <h3>Video</h3>
+            <video controls class="vids">
+              <source src="projects/alien-attack/videos/alien-attack.mp4" type="video/mp4">
+            </video>
+            <h3>Images</h3>
+            <img id="aa-main-img" class="main-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
+            <div id="aa-thumbnail" class="sub-img-container" onclick="changeImage()">
+              <img class="sub-img" src="projects/alien-attack/images/title-screen.png" alt="title screen">
+              <img class="sub-img" src="projects/alien-attack/images/abduction-particle.png" alt="abduction particle">
+              <img class="sub-img" src="projects/alien-attack/images/abduction.png" alt="abduction">
+              <img class="sub-img" src="projects/alien-attack/images/baked-lighting-on-house.png" alt="baked lighting on house">
+              <img class="sub-img" src="projects/alien-attack/images/explosion-particle.png" alt="explosion particle">
+              <img class="sub-img" src="projects/alien-attack/images/game-intro-sequence.png" alt="game intro sequence">
+              <img class="sub-img" src="projects/alien-attack/images/game-start.png" alt="game start">
+              <img class="sub-img" src="projects/alien-attack/images/gameover-screen.png" alt="gameover screen">
+              <img class="sub-img" src="projects/alien-attack/images/reloading-turret.png" alt="reloading turret">
+              <img class="sub-img" src="projects/alien-attack/images/ufo.png" alt="ufo">
+            </div>
+            <h3>Contributions</h3>
+            <ul>
+              <li>Game Design</li>
+              <li>Particle Effects</li>
+              <li>C# Coding</li>
+              <li>Level Design</li>
+              <li>UFO Model and Texturing</li>
+              <li>Rocket Turret</li>
+              <li>UI Design and Animations  </li>
+              <li>Player Animations imported from Mixamo</li>
+              <li>State Machine</li>
+            </ul>
           </div>
-          <h3>Description</h3>
-          <p>The Objective of this game is for the player to prevent all of their
-            cows from being abducted for as long as possible.  The player receives
-            points for each UFO destroyed, their score is then saved and stored
-            after all the cows are abducted.</p>
-          <h3>Contributions</h3>
-          <ul>
-            <li>Game Design</li>
-            <li>Particle Effects</li>
-            <li>C# Coding</li>
-            <li>Level Design</li>
-            <li>UFO Model and Texturing</li>
-            <li>Rocket Turret</li>
-            <li>UI Design and Animations  </li>
-            <li>Player Animations imported from Mixamo</li>
-            <li>State Machine</li>
-          </ul>
         </div>
         <div id="alien-escape">
-          <h2>Alien Escape</h2>
-          <h3>Video</h3>
-          <video controls class="vids">
-            <source src="projects/alien-escape/videos/alien-escape.mp4" type="video/mp4">
-          </video>
-          <h3>Images</h3>
-          <img id="ae-main-img" class="main-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
-          <div id="ae-thumbnail" class="sub-img-container" onclick="changeImage()">
-            <img class="sub-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
-            <img class="sub-img" src="projects/alien-escape/images/practice-level.png" alt="practice level">
-            <img class="sub-img" src="projects/alien-escape/images/level-complete.png" alt="level complete">
-            <img class="sub-img" src="projects/alien-escape/images/death-explosion.png" alt="death explosion">
-            <img class="sub-img" src="projects/alien-escape/images/fuel-power-up.png" alt="fuel power up">
-            <img class="sub-img" src="projects/alien-escape/images/replenished-fuel.png" alt="replenished fuel">
-            <img class="sub-img" src="projects/alien-escape/images/shield.png" alt="shield">
-            <img class="sub-img" src="projects/alien-escape/images/last-level.png" alt="last level">
-            <img class="sub-img" src="projects/alien-escape/images/level-capture.png" alt="level capture">
+          <div class="project-wrap">
+            <h2>Alien Escape</h2>
+            <h3>Description</h3>
+            <p>The Objective of this game is for the player to get from point A to point B
+              using a thrust/propulsion movement system.  Additionally the player must be
+              conscious of their full and moving obstacles.</p>
+            <h3>Video</h3>
+            <video controls class="vids">
+              <source src="projects/alien-escape/videos/alien-escape.mp4" type="video/mp4">
+            </video>
+            <h3>Images</h3>
+            <img id="ae-main-img" class="main-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
+            <div id="ae-thumbnail" class="sub-img-container" onclick="changeImage()">
+              <img class="sub-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
+              <img class="sub-img" src="projects/alien-escape/images/practice-level.png" alt="practice level">
+              <img class="sub-img" src="projects/alien-escape/images/level-complete.png" alt="level complete">
+              <img class="sub-img" src="projects/alien-escape/images/death-explosion.png" alt="death explosion">
+              <img class="sub-img" src="projects/alien-escape/images/fuel-power-up.png" alt="fuel power up">
+              <img class="sub-img" src="projects/alien-escape/images/replenished-fuel.png" alt="replenished fuel">
+              <img class="sub-img" src="projects/alien-escape/images/shield.png" alt="shield">
+              <img class="sub-img" src="projects/alien-escape/images/last-level.png" alt="last level">
+              <img class="sub-img" src="projects/alien-escape/images/level-capture.png" alt="level capture">
+            </div>
+            <h3>Contributions</h3>
+            <ul>
+              <li>UI Design</li>
+              <li>C# Coding</li>
+              <li>Ship Design</li>
+              <li>Shaders</li>
+              <li>Level Designs</li>
+              <li>Power Ups</li>
+              <li>Power Up Particles</li>
+            </ul>
           </div>
-          <h3>Description</h3>
-          <p>The Objective of this game is for the player to get from point A to point B
-            using a thrust/propulsion movement system.  Additionally the player must be
-            conscious of their full and moving obstacles.</p>
-          <h3>Contributions</h3>
-          <ul>
-            <li>UI Design</li>
-            <li>C# Coding</li>
-            <li>Ship Design</li>
-            <li>Shaders</li>
-            <li>Level Designs</li>
-            <li>Power Ups</li>
-            <li>Power Up Particles</li>
-          </ul>
         </div>
-        <div id="alien-escape">
-          <h2>Alien Escape</h2>
-          <h3>Video</h3>
-          <video controls class="vids">
-            <source src="projects/alien-escape/videos/alien-escape.mp4" type="video/mp4">
-          </video>
-          <h3>Images</h3>
-          <img id="ae-main-img" class="main-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
-          <div id="ae-thumbnail" class="sub-img-container" onclick="changeImage()">
-            <img class="sub-img" src="projects/alien-escape/images/title-screen.png" alt="title screen">
-            <img class="sub-img" src="projects/alien-escape/images/practice-level.png" alt="practice level">
-            <img class="sub-img" src="projects/alien-escape/images/level-complete.png" alt="level complete">
-            <img class="sub-img" src="projects/alien-escape/images/death-explosion.png" alt="death explosion">
-            <img class="sub-img" src="projects/alien-escape/images/fuel-power-up.png" alt="fuel power up">
-            <img class="sub-img" src="projects/alien-escape/images/replenished-fuel.png" alt="replenished fuel">
-            <img class="sub-img" src="projects/alien-escape/images/shield.png" alt="shield">
-            <img class="sub-img" src="projects/alien-escape/images/last-level.png" alt="last level">
-            <img class="sub-img" src="projects/alien-escape/images/level-capture.png" alt="level capture">
+        <div class="project-wrap">
+          <div id="particle-explosion">
+            <h2>Particle Explosion</h2>
+            <h3>Description</h3>
+            <p>Made a particle effect using C++ with the help of a tutorial to help become
+            more familiar with the programming language.</p>
+            <h3>Video</h3>
+            <video controls class="vids">
+              <source src="projects/particle-explosion/videos/particle-explosion.mp4" type="video/mp4">
+            </video>
+            <h3>Images</h3>
+            <img id="pe-main-img" class="main-img" src="projects/particle-explosion/images/blue-particle.png" alt="blue particle">
+            <div id="pe-thumbnail" class="sub-img-container" onclick="changeImage()">
+              <img class="sub-img" src="projects/particle-explosion/images/blue-particle.png" alt="blue particle">
+              <img class="sub-img" src="projects/particle-explosion/images/green-particle.png" alt="green particle">
+              <img class="sub-img" src="projects/particle-explosion/images/purple-particle.png" alt="purple particle">
+              <img class="sub-img" src="projects/particle-explosion/images/red-particle.png" alt="red particle">
+              <img class="sub-img" src="projects/particle-explosion/images/white-particle.png" alt="white particle">
+              <img class="sub-img" src="projects/particle-explosion/images/yellow-particle.png" alt="yello particle">
+            </div>
           </div>
-          <h3>Description</h3>
-          <p>The Objective of this game is for the player to get from point A to point B
-            using a thrust/propulsion movement system.  Additionally the player must be
-            conscious of their full and moving obstacles.</p>
-          <h3>Contributions</h3>
-          <ul>
-            <li>UI Design</li>
-            <li>C# Coding</li>
-            <li>Ship Design</li>
-            <li>Shaders</li>
-            <li>Level Designs</li>
-            <li>Power Ups</li>
-            <li>Power Up Particles</li>
-          </ul>
+        </div>
+        <div class="project-wrap">
+          <div id="unity-shaders">
+            <h2>Unity Shaders</h2>
+            <h3>Description</h3>
+            <p>Display of different shaders in Unity using CG and a bit of HLSL coding.</p>
+            <h3>Images</h3>
+            <img id="us-main-img" class="main-img" src="projects/unity-shaders/shaders-2-types.png" alt="blinn and phong">
+            <div id="us-thumbnail" class="sub-img-container" onclick="changeImage()">
+              <img class="sub-img" src="projects/unity-shaders/shaders-2-types.png" alt="blinn and phong">
+              <img class="sub-img" src="projects/unity-shaders/shaders-2.png" alt="texture world reflect and normal">
+              <img class="sub-img" src="projects/unity-shaders/shaders-4-2-types.png" alt="PBR and specular">
+              <img class="sub-img" src="projects/unity-shaders/shaders-4.png" alt="texture cube world reflect">
+              <img class="sub-img" src="projects/unity-shaders/shaders-5-lighting.png" alt="lambert blinn toon toon with texture">
+              <img class="sub-img" src="projects/unity-shaders/shaders-8.png" alt="rim lighting">
+              <img class="sub-img" src="projects/unity-shaders/shaders-5.png" alt="dot product">
+              <img class="sub-img" src="projects/unity-shaders/shaders-alphas.png" alt="alphas and render queue">
+              <img class="sub-img" src="projects/unity-shaders/shaders-holograms.png" alt="holograms">
+            </div>
+            <h3>Contributions</h3>
+            <ul>
+              <li>C# Coding</li>
+              <li>lighting</li>
+              <li>Shaders</li>
+              <li>texture application</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-wrap">
+          <div id="zombie-rush">
+            <h2>Zombie Rush</h2>
+            <h3>Description</h3>
+            <p>The objective of the game is to avoid the obstacles while collecting
+              as many coins as possible.</p>
+            <h3>Video</h3>
+            <video controls class="vids">
+              <source src="projects/zombie-rush/videos/zombie-rush.mp4" type="video/mp4">
+            </video>
+            <h3>Images</h3>
+            <img id="zr-main-img" class="main-img" src="projects/zombie-rush/images/title-screen.png" alt="title screen">
+            <div id="zr-thumbnail" class="sub-img-container" onclick="changeImage()">
+              <img class="sub-img" src="projects/zombie-rush/images/title-screen.png" alt="title screen">
+              <img class="sub-img" src="projects/zombie-rush/images/game-play.png" alt="game play">
+              <img class="sub-img" src="projects/zombie-rush/images/collecting-coins.png" alt="collecting coins">
+              <img class="sub-img" src="projects/zombie-rush/images/gameover-screen.png" alt="gameover screen">
+            </div>
+            <h3>Contributions</h3>
+            <ul>
+              <li>UI Design using pre-made assets</li>
+              <li>C# Coding</li>
+              <li>Lava Shader</li>
+              <li>coin model using pre-made assets</li>
+              <li>High score UI and functionality</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-wrap">
+          <div id="tower-defense">
+            <h2>Medieval Defense</h2>
+            <h3>Description</h3>
+            <p>The objective of this game is to prevent the enemies from reaching the other
+            side of the map. Each time they make it to the other side the counter goes up.
+            When the counter is maxed out the player loses. If all 10 rounds are completed
+            before the max number of enemies make it to the other side, the player wins.</p>
+            <h3>Video</h3>
+            <video controls class="vids">
+              <source src="projects/2d-tower-defense/videos/2d-tower-defense.mp4" type="video/mp4">
+            </video>
+            <h3>Images</h3>
+            <img id="td-main-img" class="main-img" src="projects/2d-tower-defense/images/title-screen.png" alt="title screen">
+            <div id="td-thumbnail" class="sub-img-container" onclick="changeImage()">
+              <img class="sub-img" src="projects/2d-tower-defense/images/title-screen.png" alt="title screen">
+              <img class="sub-img" src="projects/2d-tower-defense/images/next-wave.png" alt="next wave">
+              <img class="sub-img" src="projects/2d-tower-defense/images/game-finish.png" alt="game finish">
+              <img class="sub-img" src="projects/2d-tower-defense/images/enemies.png" alt="enemies">
+            </div>
+            <h3>Contributions</h3>
+            <ul>
+              <li>UI Design using pre-made assets</li>
+              <li>Level Design using pre-made assets</li>
+              <li>Score UI and functionality</li>
+              <li>C# Coding</li>
+            </ul>
+          </div>
         </div>
       </section>
+    </div>
+<!--Resume
+========================================================-->
+    <div class="content-wrap vids col-wide col-narrow">
+      <h1>Resume</h1>
+      <div class="project-wrap">
+        <div id="resume" >
+          <a href="resume.html">View Resume</a>
+        </div>
+      </div>
     </div>
 <!--footer
 ========================================================-->
     <footer>
-      <div class="content-wrap">
+      <div class="content-wrap col-wide col-narrow">
         <section id="contact" >
-          <h2><b>Let's Keep in Touch!</b></h2>
+          <h1><b>Let's Keep in Touch!</b></h1>
           <a href="mailto:roybal.usmc@gmail.com">Roybal.usmc@gmail.com</a>
           <a href="https:linkedin.com/in/anthony-roybal">LinkedIn</a>
           <a href="https://archeleus21.github.io/My-Page/">My Website</a>

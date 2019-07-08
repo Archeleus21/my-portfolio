@@ -4,6 +4,12 @@
 #605856; Wenge
 #1C6E8C; Metallic Seaweed
 #274156; Japanese Indigo
+#F15025; Flame
+#E6E8E6; platinum
+#969896; Spanish Gray
+#191919; earie black
+#0CA4A5; persian green
+
 */
 
 /*Global styles
@@ -12,16 +18,17 @@ html
 {
   /*set 'box-sizing: border-box' on an element
   padding and border are included in the width and height.
-  must include
+  must include, this makes all content within the box to inherit
+  the box sizing inside that element if its sizing is changed
   *, *:before, *:after
   {
     box-sizing: inherit;
   }*/
   box-sizing: border-box;
-  font-size: 1.2em;
+  font-size: 1.25em;
   /*puts a gradient transition on background and adds and image*/
-  background: linear-gradient(rgba(208, 204, 208, .7), rgba(208, 204, 208, 0.3), rgba(208, 204, 208, 0.7)),
-  url(/images/lake.jpg) no-repeat fixed;
+  background: linear-gradient(rgba(25, 25, 25, .7), rgba(208, 204, 208, 0.3), rgba(25, 25, 25, 0.7)),
+  url(../images/lake.jpg) no-repeat fixed;
   /*positions img center*/
   background-position: center;
   /*img covers entire container*/
@@ -37,23 +44,27 @@ body
   font-family: 'Zilla Slab', serif;
   /*removed white margins around page*/
   margin: 0px;
-  color: #274156; /*Japanese Indigo*/
+  color: #E6E8E6; /*platinum*/
+  font-size: 1em;
 }
 h1
 {
   font-family: 'Courgette', cursive;
-  font-size: 2em;
-  color: #1C6E8C; /*Metallic SeaWeed*/
+  font-size: 1.5em;
+  color: #F15025; /*Flame*/
 }
 h2
 {
   font-family: 'Courgette', cursive;
-  font-size: 1.5em;
+  font-size: 1.25em;
+  color: #0CA4A5; /*persian green*/
 }
 h3
 {
   font-family: 'Zilla Slab', serif;
-  font-size: 1.3em;
+  font-size: 1.15em;
+  margin: 0;
+  color: #0CA4A5;
 }
 h4
 {
@@ -65,19 +76,13 @@ h5
   font-family: 'Zilla Slab', serif;
   font-size: .75em;
 }
-.content-wrap
+p
 {
-  /*allows blocks to position relative to container*/
-  position: relative;
-  /*max size of container*/
-  max-width: 70%;
-  /*keeps contet centered*/
+  width: 90%;
   margin: 0 auto;
-  /*padding around content*/
-  padding: 20px;
-  background-color: rgba(208, 204, 208, .5); /*White*/
-  border: 2px solid rgba(39, 65, 86, 1);
+  padding: 0 10%;
 }
+
 /*Header
 -------------------------------------------------------*/
 header
@@ -86,85 +91,25 @@ header
   margin: 0;
   /*makes all containers relative to itself*/
   position: relative;
-  color: #274156; /*Japanese Indigo*/
+  /* color: #274156; /*Japanese Indigo*/
 }
-/*Intro
-------------------------------------------------------*/
-.intro
-{
-  /* position: relative; */
-  /*max size of container*/
-  max-width: 70%;
-  /*keeps contet centered*/
-  margin: 0 auto;
-  /*padding around content*/
-  padding: 20px;
-  /*sets font to 1.1x the default value*/
-  font-size: 1.2em;
-  /*aligns text center of container*/
-  text-align: center;
-  /*set container across entire width of viewport*/
-  /* width: 100%; */
-  /*adds padding around content top, sides, bottom*/
-  padding: 100px 0px 200px;
-}
+
 .my-name
 {
   font-family: 'Courgette', cursive;
-  color: #1C6E8C; /*Metallic Seaweed*/
+  color: #191919; /*earie black*/
 }
-nav
-{
-  /*max size of container*/
-  max-width: 70%;
-  /* aligning the inner content of a block element. */
-  /* text-align: left; */
-  /*absolute; is positioned relative to the viewport,*/
-  position: absolute;
-  /*bottom offselt is at 0*/
-  bottom: 0px;
-  /* stretch accross the entire width of the viewport */
-  /* width: 100%; */
-  /* background: white; */
 
-}
-.nav-buttons
-{
-  /*removed bottom margins on unordered list*/
-  margin-bottom: 1px;
-  padding: 0;
-}
-nav a
-{
-  /* allows to set a width and height on the element */
-  display: inline-block;
-  /* enlarging clickable area around links */
-  padding: .2em;
-  /* font size relative to the display default size */
-  font-size: 1.25em;
-  /* color */
-  color: #FBFCFF;  /*white*/
-  /* grandient */
-  background: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .3));
-  /*removed underline and other decorations*/
-  text-decoration: none;
-  /*border*/
-  border: 2px solid rgba(39, 65, 86, 1);
-}
 nav a:hover
 {
   /* grandient */
-  background: linear-gradient(rgba(199, 187, 201, .4),rgba(199, 187, 201, .3));
+  background: linear-gradient(rgba(12,164,165, .3), rgba(12,164,165, .7), rgba(12,164,165, .3));  /*persian green*/
+  color: #191919; /*earie black*/
+  border: 2px solid black;
 }
 /*Body
 ---------------------------------------------------------*/
-/* About
-------------------------------------------------------*/
-/* .col-wide
-{
-  width: 95%;
-  padding-left: 40px;
-} */
+
 /*knowledge
 ------------------------------------------------------*/
 .icons
@@ -185,9 +130,24 @@ i
 }
 /*Projects
 ------------------------------------------------------------*/
+.project-wrap
+{
+  /*allows blocks to position relative to container*/
+  position: relative;
+  /*max size of container*/
+  max-width: 95%;
+  /*keeps contet centered*/
+  margin: 10px auto 10px;
+  /*padding around content*/
+  padding: 20px;
+
+  background-color: rgba(25,25,25, .75); /*Earie black*/
+  border: 2px solid;
+}
 #projects
 h3
 {
+  padding: 15px 0;
   text-align: center;
   text-decoration: underline;
 }
@@ -198,7 +158,7 @@ h3
   /*centers vid*/
   margin: 0 auto 5px;
   /* always takes up 90% of container*/
-  width: 90%;
+  width: 70%;
   /*puts border around vid*/
   border: 2px solid;
 }
@@ -210,33 +170,35 @@ h3
   /*centers image*/
   margin: 0 auto 5px;
   /*Always takes up 75% of container*/
-  width: 75%;
+  width: 50%;
   /*puts border around image*/
   border: 2px solid;
 }
 .sub-img-container
 {
   /*max height of container*/
-  max-height: 120px;
+  max-height: 125px;
   /*alsways fills 100% of container*/
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   /*puts border around container*/
   border: 2px solid;
   /*allows for left and right scrolling*/
-  overflow: scroll;
+  overflow: auto;
   /*prevents verticle scrolling*/
   overflow-y: hidden;
   /*ensures items stay on one line*/
   white-space: nowrap;
+  text-align: center;
 }
 .sub-img
 {
   /*container only around content not entire page*/
   display: inline-block;
   /*puts space around image*/
-  margin: 3px 3px;
+  margin: 10px 0 10px 10px;
   /*sets hight of image*/
-  height: 95px;
+  height: 75px;
   /*puts boarder aroud image*/
   border: 2px solid;
 }
@@ -245,10 +207,228 @@ h3
   border: 4px solid red;
   cursor: pointer;
 }
+/*Resume
+------------------------------------------------------*/
+#resume
+{
+  text-align: center;
+  margin: 0 auto;
+}
+#resume
+a
+{
+  /* color */
+  color: #0CA4A5;  /*persian green*/
+  padding: 10px;
+  border: 2px solid;
+  /* grandient */
+  background: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .3));
+}
+#resume
+a:hover
+{
+  /* color */
+  color: #191919; /*earie black*/
+  background: linear-gradient(rgba(12,164,165, .3), rgba(12,164,165, .7), rgba(12,164,165, .3));  /*persian green*/
+  border: 2px solid black;
+  text-decoration: none;
+}
 
 /*Footer
 -------------------------------------------------------*/
 footer
 {
     text-align: center;
+}
+#contact
+a
+{
+    padding: 10px;
+    color: #0CA4A5; /*persian green*/
+}
+#contact
+a:hover
+{
+    text-decoration: none;
+    background: linear-gradient(rgba(12,164,165, .3), rgba(12,164,165, .7), rgba(12,164,165, .3));  /*persian green*/
+    color: #191919; /*earie black*/
+}
+
+/*Media
+---------------------------------------------------------*/
+@media (min-width: 900px) /*anything smaller gets default, larger gets changed*/
+{
+  nav
+  {
+    /*max size of container*/
+    /* max-width: 70%; */
+    /* aligning the inner content of a block element. */
+    /* text-align: left; */
+    /*absolute; is positioned relative to the viewport,*/
+    position: relative;
+    /*bottom offselt is at 0*/
+    margin: 0px auto;
+    /* stretch accross the entire width of the viewport */
+    /* width: 100%; */
+    /* background: white; */
+
+  }
+  .nav-buttons
+  {
+    /*removed bottom margins on unordered list*/
+    margin-bottom: 5px;
+  }
+  nav a
+  {
+    /* allows to set a width and height on the element */
+    display: inline-block;
+    /* enlarging clickable area around links */
+    /* padding: .2em; */
+    /* font size relative to the display default size */
+    /* font-size: 1.25em; */
+    /* color */
+    color: #FBFCFF;  /*white*/
+    /* grandient */
+    background: linear-gradient(rgba(25, 25, 25, .7),rgba(25, 25, 25, .3),rgba(25, 25, 25, .7));
+    /*removed underline and other decorations*/
+    text-decoration: none;
+    /*border*/
+    border: 2px solid; /*japanese indigo*/
+  }
+  .col-narrow
+  {
+    width: 30%;
+    /* border: 1px solid black; */
+  }
+  .col-wide
+  {
+    width: 70%;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+  }
+  .content-wrap
+  {
+    /*allows blocks to position relative to container*/
+    position: relative;
+    /*max size of container*/
+    max-width: 70%;
+    /*keeps contet centered*/
+    margin: 0 auto;
+    /*padding around content*/
+    /* padding: 20px; */
+    background-color: rgba(25, 25, 25, .5); /*Wenge*/
+    border: 1px solid;
+  }
+  #about
+  {
+    margin-bottom: 20px;
+  }
+  /*Intro
+  ------------------------------------------------------*/
+  .intro
+  {
+    /* position: relative; */
+    /*max size of container*/
+    max-width: 70%;
+    /*keeps contet centered*/
+    margin: 0 auto;
+    /*padding around content*/
+    padding: 20px;
+    /*sets font to 1.1x the default value*/
+    font-size: 1.2em;
+    /*aligns text center of container*/
+    text-align: center;
+    /*set container across entire width of viewport*/
+    /* width: 100%; */
+    /*adds padding around content top, sides, bottom*/
+    padding: 100px 0px 0px;
+  }
+  #projects
+  ul
+  {
+    margin: 0 auto;
+    padding: 0 40%
+  }
+}
+@media (max-width: 899px)
+{
+  nav
+  {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+  nav
+  .nav-buttons
+  {
+      padding: 5px;
+  }
+  nav a
+  {
+    /* allows to set a width and height on the element */
+    display: inline-block;
+    /* enlarging clickable area around links */
+    padding: .2em;
+    /* font size relative to the display default size */
+    font-size: 1em;
+    /* color */
+    color: #FBFCFF;  /*white*/
+    /* grandient */
+    background: linear-gradient(rgba(25, 25, 25, .7),rgba(25, 25, 25, .3),rgba(25, 25, 25, .7));
+    /*removed underline and other decorations*/
+    text-decoration: none;
+    /*border*/
+    border: 2px solid;
+  }
+  .content-wrap
+  {
+    /*allows blocks to position relative to container*/
+    position: relative;
+    /*max size of container*/
+    max-width: 100%;
+    /*keeps contet centered*/
+    margin: 0 auto;
+    /*padding around content*/
+    padding: 20px;
+    background-color: rgba(96, 88, 86, .5); /*Wenge*/
+    border: 2px solid rgba(39, 65, 86, 1);
+
+  }
+  /*Intro
+  ------------------------------------------------------*/
+  .intro
+  {
+    /* position: relative; */
+    /*max size of container*/
+    max-width: 100%;
+    /*keeps contet centered*/
+    margin: 0 auto;
+    /*padding around content*/
+    padding: 20px;
+    /*sets font to 1.1x the default value*/
+    font-size: 1.2em;
+    /*aligns text center of container*/
+    text-align: center;
+    /*set container across entire width of viewport*/
+    /* width: 100%; */
+    /*adds padding around content top, sides, bottom*/
+    padding: 100px 0px 200px;
+  }
+  #projects
+  ul
+  {
+    margin: 0 auto;
+    padding: 0 10%
+  }
+  .col-wide
+  {
+    width: 95%;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+  }
+  .col-narrow
+  {
+    padding: 0;
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,228 @@
+/* Color Pallet
+#12355B - Prussian Blue
+#420039 - Tyrian Purple
+#D72638 - Rose Madder
+#FFFFFF - White
+#FF570A - Orange(Pantone)
+
+#232020 - Raisin Black
+#553739 - Dark Liver(Horses)
+#955E42 - Coconut
+#9C914F - Dark Tan
+#748E54 - Camouflage Green
+*/
+/*fonts:
+font-family: 'Roboto Slab', serif;
+font-family: 'Kaushan Script', cursive;
+*/
+/* Global styles
+-----------------------------------*/
+html
+{
+  box-sizing: border-box;
+}
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+body
+{
+  font-family: 'Roboto Slab', serif;
+  margin: 0px; /*removed white margins around page*/
+}
+h1, h2
+{
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+}
+h1
+{
+  font-size: 3em;
+}
+h2
+{
+  font-size: 2em;
+  margin-top: 0px;  /*removed space above the h2*/
+}
+h3
+{
+  margin: 0px;
+}
+a
+{
+  color: #D72638; /*Rose Madden*/
+}
+a:hover
+{
+  text-decoration: none;
+}
+.content-wrap
+{
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 60px 50px;  /*adds 50px to all sides of the content*/
+  overflow: auto; /*self clears over flow keeping image and text within the desired area*/
+}
+.uppercase
+{
+  text-transform: uppercase;
+}
+/*download button*/
+.button
+{
+  text-decoration: none;
+  background: #D72638; /*red Madder*/
+  color: #FFFFFF; /*white*/
+  padding: 10px;
+  display: inline-block; /*treats link as block content allowing for padding to be added*/
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* left: 0; */
+}
+/* Header and Footer
+------------------------------------*/
+header, footer
+{
+  background : #232020; /*Raisin Black*/
+  color: #748E54;  /*Camouflage Green*/
+}
+/*header*/
+/*------------------------------------*/
+header
+{
+  padding-top: 50px;
+  position: relative; /*contains link in header*/
+}
+header h1, header h2
+{
+  color: #9C914F; /*Dark Tan*/
+  margin: 0px; /*removes margine from h1 and h2*/
+}
+.profile-img
+{
+  /*border-radius: 50%; /*makes image circle, if orignal is square(my image was a circle already)*/
+
+}
+.download
+{
+  /*moves link to bottom right of header and adjust with size of header*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.download:hover
+{
+  background: #FFB0CC;
+}
+
+/*footer*/
+/*------------------------------------*/
+footer
+{
+  text-align: center;  /*centers footer*/
+}
+.contact-info a
+{
+  padding: 10px;
+  display: inline-block; /*adds spacing to inline elements*/
+  font-size: 20px;
+}
+/* navigation
+------------------------------------*/
+nav
+{
+  text-align: center; /*centers links at top of page*/
+  background: #FFFFFF; /*white*/
+  position: fixed;
+  top: 0; /*off set*/
+  width: 100%;  /*spans entire window*/
+}
+nav a
+{
+  display: inline-block;  /*makes inline block in order to add padding*/
+  padding: 15px 20px;  /*adds space between links at top of page*/
+  text-decoration: none;  /* removes underlines*/
+  text-transform: uppercase;  /* makes all caps*/
+  font-weight: 700;  /*equivalent to bold*/
+}
+/* Work Experience
+------------------------------------*/
+.work
+{
+  background: #955E42; /*Coconut*/
+  background: linear-gradient(rgba(149, 94, 66, .9), rgba(149, 94, 66, 0.6)),
+              url(../images/cup-and-book.png) no-repeat fixed;
+  background-size: cover;
+}
+.work li
+{
+  margin-top: 10px;
+}
+h3 ~ p
+{
+  margin: 0px;
+}
+.job-description
+{
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type
+{
+  margin-top: 0px;
+}
+/*Education
+------------------------------------*/
+.education
+{
+  /*background: #553739;  /*Dark Liver(Horses)*/
+  background: linear-gradient(rgba(85, 55, 57, 0.8), rgba(85, 55, 57, 0.5)),
+              url(../images/books.png) no-repeat fixed;
+  background-size: cover;
+}
+p + h3
+{
+  margin-top: 30px;
+}
+/*medua Queries
+=====================================================*/
+@media (min-width: 900px) /*anything smaller gets default, larger gets changed*/
+{
+  .col-narrow
+  {
+    width: 30%;
+    float: left;
+    /* border: 1px solid black; */
+  }
+  .col-wide
+  {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+  }
+}
+@media (max-width: 899px)
+{
+  header
+  {
+    text-align: center;
+  }
+  .profile-img
+  {
+    width: 200px;
+  }
+}
+/*web fonts
+(local downloaded files like this)
+use:
+@font-face
+{
+  font-family: 'Musel Sans';
+  src: url("put file location here ex: musel-sans.tff");
+}
+then add to styles like any other style
+body
+{
+  font-family: 'Museo Sans', Arial, sans-serif;
+}
+*/
