@@ -27,11 +27,10 @@ img, video
   max-width: 100%;
 }
 /* border around all content */
-.header, nav, #about, #knowledge, #projects, #resume, .footer,
-.aa-title, .aa-desc, .aa-desc+p, .aa-vid-sect, .aa-vid,
-.aa-img, #aa-main-img, #aa-thumbnail, .aa-contr, .aa-contr+ul
+.header, nav, #about, #knowledge, #resume, .footer,
+.title, .desc, .desc+p, .vid-sect, .vid, .nested-container,
+.img, #aa-main-img, #aa-thumbnail, .contr, .contr+ul
 {
-	border: 1px solid red;
 	padding: 10px;
 }
 /* container for page  layout */
@@ -42,7 +41,7 @@ img, video
   /* creates a 12 column grid layout */
   grid-template-columns: repeat(12, 1fr);
   /* gap between elements in container*/
-  grid-gap: 10px;
+  gap: 10px;
   margin: 0 auto;
 }
 .nested-container
@@ -52,8 +51,8 @@ img, video
   /* creates a 12 column grid layout */
   grid-template-columns: repeat(12, 1fr);
   /* gap between elements in container*/
-  grid-gap: 10px;
-  margin: 0 auto;
+  gap: 10px;
+  margin-top: 20px;
 }
 /* #projects .container .desc p
 {
@@ -68,7 +67,7 @@ nav ul
   /* removes padding */
   padding: 0;
 }
-#aa-thumbnail
+.thumbnail
 {
   max-height: 200px;
   overflow: auto;
@@ -89,7 +88,8 @@ nav ul
   /* starts at line 1 and covers entire 12 columns */
   grid-column: 1 / span 12;
   /* removes margin */
-  margin:0;
+  margin: 0;
+
 }
 /* mediume sized screens */
 @media (min-width: 600px)
@@ -143,31 +143,31 @@ nav ul
   }
 /* nested container
 ===================================================== */
-  .aa-desc, .aa-desc+p
+  .desc, .desc+p
   {
     grid-column: 1 / span 6;
   }
-  .aa-vid-sect
+  .vid-sect
   {
     grid-column: 7 / span 6;
     grid-row: 2;
   }
-  .aa-vid
+  .vid
   {
     grid-column: 7 / span 6;
     grid-row: 3;
   }
-  #aa-main-img
+  .main-img
   {
     grid-column: 1 / span 6;
   }
-  #aa-thumbnail
+  .thumbnail
   {
     grid-column: 7 / span 6;
     grid-row: 5;
     margin: auto 0;
   }
-  .aa-contr
+  .contr
   {
     grid-column: 1 / span 6;
   }
