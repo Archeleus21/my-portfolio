@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--Resume website
 ================================================================-->
     <link rel="resume" href="resume.html">
@@ -45,6 +47,21 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!--mobile links, hidden by default-->
+      <div id="mobile-links">
+        <a href="#about">About</a>
+        <a href="#knowledge">Knowledge</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="mobileLinks()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <img class="profile-img" src="images/Anthony-Roybal.png" width="100px" height="100px" alt="Anthony Roybal'sProfile Image">
+      <p class="logo">Anthony Roybal</p>
+
 <!--About
 ========================================================-->
       <article id="about" alt="about">
@@ -271,7 +288,7 @@
           <h1><b>Let's Keep in Touch!</b></h1>
           <a href="mailto:roybal.usmc@gmail.com">Roybal.usmc@gmail.com</a>
           <a href="https:linkedin.com/in/anthony-roybal">LinkedIn</a>
-          <a href="https://archeleus21.github.io/My-Page/">My Website</a>
+          <a href="https://archeleus21.github.io/My-Page/">My&nbsp;Resume&nbsp;Site</a>
           <a href="https://github.com/Archeleus21">GitHub</a>
           <h5>Copyright 2019 by Anthony Roybal</h5>
         </div>
