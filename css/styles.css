@@ -107,6 +107,10 @@ i
   font-size: 2.5em;
   color: #5BC0EB; /*blue jean*/
 }
+a i
+{
+  z-index: 100;
+}
 /*porjects
 =========================================================*/
 .title
@@ -175,12 +179,6 @@ a
   height: 155px;
   width: 225px;
 }
-.container #mobile-links
-{
-  overflow: hidden;
-  /*hide the links*/
-  display: none;
-}
 .footer
 {
   text-align: center;
@@ -211,6 +209,9 @@ a
   #mobile-links
   {
     grid-row: 2;
+    overflow: hidden;
+    /*hide the links*/
+    display: none;
   }
   #mobile-links a
   {
@@ -221,6 +222,7 @@ a
     font-size: 17px;
     background: #211A1E; /*eerie black*/
     border: 1px solid #111;
+    z-index: 99;
   }
   .container .icon
   {
@@ -228,6 +230,8 @@ a
     grid-row: 1;
     font-size: 2em;
     margin: auto auto;
+    display: block;
+    z-index: 100;
   }
   #mobile-links a:hover
   {
@@ -238,7 +242,7 @@ a
 =============================================================*/
 @media (min-width: 720px)
 {
-  .icon
+  .icon, #mobile-links
   {
     display: none;
   }
